@@ -59,7 +59,7 @@
                             <addClasspath>true</addClasspath>
                             <!--<classpathPrefix></classpathPrefix>-->
                             <!-- jar启动入口类 -->
-                            <mainClass>com.aspire.pam.WebApp</mainClass>
+                            <mainClass>spring.boot.kafka.service.AppKafkaClient</mainClass>
                         </manifest>
                         <manifestEntries>
                             <!-- 在Class-Path下添加配置文件的路径 -->
@@ -87,11 +87,11 @@
                 <configuration>
                     <!-- not append assembly id in release file name -->
                     <filters>
-                        <filter>assemble/filters.properties</filter>
+                        <filter>filters.properties</filter>
                     </filters>
                     <appendAssemblyId>false</appendAssemblyId>
                     <descriptors>
-                        <descriptor>assemble/assembly.xml</descriptor>
+                        <descriptor>assembly.xml</descriptor>
                     </descriptors>
                 </configuration>
                 <executions>
